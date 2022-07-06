@@ -145,5 +145,16 @@ console.log(sum(10));//output: 40
 single line function body doenst need "return" keyword.
 */ 
 
+//rest parameter, args, dynamic array of parameters
+function multiply(...args){
+    let res = 1;
+    for(let i = 0;i<args.length;i++)
+    {
+        res *= args[i]; 
+    }
+    return res;
+}
+
+console.log(multiply(1,2,3,4,5));
 
 
