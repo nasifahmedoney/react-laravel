@@ -119,7 +119,7 @@ console.log(copyObj);
 
 //object to JSON and JSON to object
 
-let obj = {
+/* let obj = {
     name: "user",
     age: '100'
 }
@@ -129,4 +129,12 @@ let jsonTOobject = JSON.parse(toJSONdata)
 
 console.log(toJSONdata);
 console.log(jsonTOobject);
+ */
 
+//default parameters, assigining values in function parameter
+
+function sum(num1,num2=10,num3=20){
+    return num1+num2+num3;
+}
+
+console.log(sum(10));//output: 40
