@@ -169,7 +169,7 @@ single line function body doenst need "return" keyword.
 */ 
 
 //rest parameter, args, dynamic array of parameters
-function multiply(...args){
+/* function multiply(...args){
     let res = 1;
     for(let i = 0;i<args.length;i++)
     {
@@ -179,5 +179,20 @@ function multiply(...args){
 }
 
 console.log(multiply(1,2,3,4,5));
+ */
+
+//callback functions
+//calling a function as parameter in another function
+let result = function(number)
+{
+    console.log(number);
+}
+
+let sum = function(num1,num2, callbackFunction)
+{
+    let calculateSum = num1+num2;
+    callbackFunction(calculateSum);
+}
+sum(1,2,result);
 
 
