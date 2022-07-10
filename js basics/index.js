@@ -183,7 +183,7 @@ console.log(multiply(1,2,3,4,5));
 
 //callback functions
 //calling a function as parameter in another function
-let result = function(number)
+/* let result = function(number)
 {
     console.log(number);
 }
@@ -194,5 +194,24 @@ let sum = function(num1,num2, callbackFunction)
     callbackFunction(calculateSum);
 }
 sum(1,2,result);
+ */
 
+// promises, produce a result or an error
+let promise = new Promise(function (resolve,reject)
+{
+    //setTimeout(resolve("done"),2000);
+    let x = 1;
+    if(x === 0)
+    {
+        resolve('ok');
+    }
+    else{
+        reject('error');
+    }
+});
+
+promise.then(
+    function(result){console.log(result)},
+    function(error){console.log(error)}
+);
 
