@@ -241,3 +241,23 @@ changePerson(person);
 person.displayInfo();
 console.log(Object.keys(person),Object.values(person));
  */
+//----------------------------------------------------
+//property value shorthand
+//assign values to user object using newFunction parameters
+
+function newFunction(val1,val2){
+    return {
+        val1,
+        val2,
+        display()
+        {
+            console.log(`display values ${val1}`);
+        }
+    }
+}
+
+let user = newFunction(1,2);
+console.log(user.val1);//output: 1
+console.log(user.val2);//output: 2
+user.display();//output: console.log
+console.log(user)
