@@ -4,7 +4,7 @@
 let variable = null;
 
 console.log(typeof variable); */
-// ------------------------------
+//----------------------------------------------------
 /* js objects syntax
 let  user = {
     name: 'nasif',
@@ -13,18 +13,18 @@ let  user = {
 //accessing data various ways
 console.log(user.name);
 console.log(user['age']); */
-// --------------------------
+//----------------------------------------------------
 // arrays
 /* 
 let a = ['nasif','ahmed','oney'];
 console.log(a[1]);
  */
-// --------------------------
+//----------------------------------------------------
 // template literals,use `` not single quote
 /* let name = "user"
 console.log(`the name is ${name}`);
  */
-// --------------------------
+//----------------------------------------------------
 //object and array within an object
 /* let person = {
     name: 'user',
@@ -38,7 +38,7 @@ console.log(`the name is ${name}`);
 console.log(person.address['lat']);
 console.log(person.address.long);
 console.log(person.freinds[0]); */
-// --------------------------
+//----------------------------------------------------
 // for..in loop 
 /* 
 let objs = {
@@ -56,13 +56,14 @@ for(let key in arr)
     console.log(key,arr[key]); //access property and value
 }
  */
+//----------------------------------------------------
 // for..of
 /* const arr = [1,2,3,4,5];
 for(let key of arr)
 {
     console.log(key); //access value only
 } */
-
+//----------------------------------------------------
 //string methods
 /* stringName.chatAt(index),
 .toUpperCase(),
@@ -71,6 +72,7 @@ includes(),boolean
 startsWith(),boolean
 endsWith(),boolean
  */
+//----------------------------------------------------
 //using functions and this keyword inside an object
 /* let user = {
     name: 'user',
@@ -80,7 +82,7 @@ endsWith(),boolean
 }
 user.displayName();
  */
-
+//----------------------------------------------------
 //accessing object property and data as array
 /* let obj = {
     name: "user",
@@ -89,6 +91,7 @@ user.displayName();
 console.log(Object.keys(obj));
 console.log(Object.values(obj));
  */
+//----------------------------------------------------
 //object destructuring
 /* const obj = {
     name: "user",
@@ -105,7 +108,7 @@ const {name1,age1} = obj.newObj;
 console.log(age);
 console.log(age1);
  */
-
+//----------------------------------------------------
 //clone object
 /* 
 let obj = {
@@ -116,7 +119,7 @@ let copyObj = Object.assign({},obj);//copy all the contents of obj and assign to
 
 console.log(copyObj);
  */
-
+//----------------------------------------------------
 //object to JSON and JSON to object
 
 /* let obj = {
@@ -130,7 +133,7 @@ let jsonTOobject = JSON.parse(toJSONdata)
 console.log(toJSONdata);
 console.log(jsonTOobject);
  */
-
+//----------------------------------------------------
 //default parameters, assigining values in function parameter
 /* 
 function sum(num1,num2=10,num3=20){
@@ -139,7 +142,7 @@ function sum(num1,num2=10,num3=20){
 
 console.log(sum(10));//output: 40
  */
-
+//----------------------------------------------------
 //arrow function with examples
 //codeacademy cheatsheet
 // Arrow function with two arguments 
@@ -167,7 +170,7 @@ console.log(sum(10));//output: 40
 /* single parameter dont use (),0 or 2+ parameter use (),
 single line function body doenst need "return" keyword.
 */ 
-
+//----------------------------------------------------
 //rest parameter, args, dynamic array of parameters
 /* function multiply(...args){
     let res = 1;
@@ -180,7 +183,7 @@ single line function body doenst need "return" keyword.
 
 console.log(multiply(1,2,3,4,5));
  */
-
+//----------------------------------------------------
 //callback functions
 //calling a function as parameter in another function
 /* let result = function(number)
@@ -195,7 +198,7 @@ let sum = function(num1,num2, callbackFunction)
 }
 sum(1,2,result);
  */
-
+//----------------------------------------------------
 // promises, produce a result or an error
 /* let promise = new Promise(function (resolve,reject)
 {
@@ -216,11 +219,11 @@ promise.then(
 );
 
  */
-
+//----------------------------------------------------
 //pass by reference object
 // alter object values permanently and add new properties
 
-let person = {
+/* let person = {
     name: 'user',
     age: 100,
     displayInfo: function(){
@@ -237,3 +240,4 @@ let changePerson = function(obj){
 changePerson(person);
 person.displayInfo();
 console.log(Object.keys(person),Object.values(person));
+ */
