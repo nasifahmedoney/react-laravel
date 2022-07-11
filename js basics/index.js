@@ -197,7 +197,7 @@ sum(1,2,result);
  */
 
 // promises, produce a result or an error
-let promise = new Promise(function (resolve,reject)
+/* let promise = new Promise(function (resolve,reject)
 {
     //setTimeout(resolve("done"),2000);
     let x = 1;
@@ -215,3 +215,25 @@ promise.then(
     function(error){console.log(error)}
 );
 
+ */
+
+//pass by reference object
+// alter object values permanently and add new properties
+
+let person = {
+    name: 'user',
+    age: 100,
+    displayInfo: function(){
+        console.log(`The person is ${this.name} and ${this.age} years old.`);
+    }
+};
+
+let changePerson = function(obj){
+    obj.age += 100;
+    obj.name = 'new user';
+    obj.newProperty = 'new property'; 
+}
+
+changePerson(person);
+person.displayInfo();
+console.log(Object.keys(person),Object.values(person));
