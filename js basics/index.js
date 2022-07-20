@@ -245,7 +245,7 @@ console.log(Object.keys(person),Object.values(person));
 //property value shorthand
 //assign values to user object using newFunction parameters
 
-function newFunction(val1,val2){
+/* function newFunction(val1,val2){
     return {
         val1,
         val2,
@@ -261,3 +261,18 @@ console.log(user.val1);//output: 1
 console.log(user.val2);//output: 2
 user.display();//output: console.log
 console.log(user)
+ */
+//----------------------------------------------------
+
+// finding an object inside an array
+
+const users = [
+    {name: 'user1', age: 100},
+    {name: 'user2', age: 200},
+    {name: 'user3', age: 300}
+];
+
+const res = users.find(function(users){
+    return users.name = 'user1';
+})
+console.log(res);
