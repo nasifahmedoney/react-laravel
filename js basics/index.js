@@ -287,3 +287,17 @@ arr.forEach(function(value,index){
     console.log(value,index);
 }); */
 //----------------------------------------------------
+//array every and some method
+const arr = [1,5,3,6,4,-1];
+
+let a = arr.every(function(num){
+    return num > 1;
+});
+console.log(a);//output: false, every number is not greater than 1, there is a -1
+
+let b = arr.some(function(num){
+    return num < 0;
+});
+console.log(b);//output: true, there is anumber less than 0, -1.
+
+//----------------------------------------------------
