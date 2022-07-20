@@ -265,7 +265,7 @@ console.log(user)
 //----------------------------------------------------
 
 // finding an object inside an array
-
+/* 
 const users = [
     {name: 'user1', age: 100},
     {name: 'user2', age: 200},
@@ -276,3 +276,14 @@ const res = users.find(function(users){
     return users.name = 'user1';
 })
 console.log(res);
+ */
+
+//----------------------------------------------------
+//array foreach
+/* 
+let arr = [1,2,3,4,5];
+
+arr.forEach(function(value,index){
+    console.log(value,index);
+}); */
+//----------------------------------------------------
