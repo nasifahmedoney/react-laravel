@@ -304,11 +304,11 @@ console.log(b);//output: true, there is anumber less than 0, -1.
 //array map
 //returns an array
 // array.map(callback function or function body)
-let a = [
+/* let a = [
     {firstname: "nasif", lastname: "ahmed"},
     {firstname: "first", lastname: "name"},
     {firstname: "ahmed", lastname: "nasif"}
-];
+]; */
 //option 1
 /* let b = a.map(myFunction);
 
@@ -321,9 +321,19 @@ output: array
 ['nasif ahmed', 'first name', 'ahmed nasif']
  */
 //option 2
-let b = a.map(function(num){
+/* let b = a.map(function(num){
     return num.firstname;
 })
-console.log(b);
+console.log(b); */
 //output: ['nasif', 'first', 'ahmed']
 //----------------------------------------------------
+// array filter, filter array elements, returns array
+ let oddNumbers = [1,2,4,5,3,5,7];
+ let users = ['user1','user2','user3'];
+
+ let arrFilter = oddNumbers.filter((numbers) => numbers % 2 !== 0 );
+ console.log(arrFilter);//[1, 5, 3, 5, 7]
+ 
+ let usersFilter = users.filter((users) => users === 'user1' );
+ console.log(usersFilter);//['user1']
+ 
