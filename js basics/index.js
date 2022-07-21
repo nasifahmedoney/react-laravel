@@ -288,7 +288,7 @@ arr.forEach(function(value,index){
 }); */
 //----------------------------------------------------
 //array every and some method
-const arr = [1,5,3,6,4,-1];
+/* const arr = [1,5,3,6,4,-1];
 
 let a = arr.every(function(num){
     return num > 1;
@@ -299,5 +299,31 @@ let b = arr.some(function(num){
     return num < 0;
 });
 console.log(b);//output: true, there is anumber less than 0, -1.
+ */
+//----------------------------------------------------
+//array map
+//returns an array
+// array.map(callback function or function body)
+let a = [
+    {firstname: "nasif", lastname: "ahmed"},
+    {firstname: "first", lastname: "name"},
+    {firstname: "ahmed", lastname: "nasif"}
+];
+//option 1
+/* let b = a.map(myFunction);
 
+function myFunction(num)
+{
+    return [num.firstname,num.lastname].join(' ');
+}
+console.log(b);
+output: array
+['nasif ahmed', 'first name', 'ahmed nasif']
+ */
+//option 2
+let b = a.map(function(num){
+    return num.firstname;
+})
+console.log(b);
+//output: ['nasif', 'first', 'ahmed']
 //----------------------------------------------------
