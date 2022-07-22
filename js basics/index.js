@@ -328,12 +328,31 @@ console.log(b); */
 //output: ['nasif', 'first', 'ahmed']
 //----------------------------------------------------
 // array filter, filter array elements, returns array
- let oddNumbers = [1,2,4,5,3,5,7];
+/*  let oddNumbers = [1,2,4,5,3,5,7];
  let users = ['user1','user2','user3'];
 
  let arrFilter = oddNumbers.filter((numbers) => numbers % 2 !== 0 );
  console.log(arrFilter);//[1, 5, 3, 5, 7]
  
  let usersFilter = users.filter((users) => users === 'user1' );
- console.log(usersFilter);//['user1']
- 
+ console.log(usersFilter);//['user1'] */
+ //----------------------------------------------------
+//arrar destructure
+
+let [a,b,c,d] = [1,2,3,4];
+console.log(a);//output: 1
+ const obj = {
+    name: "user",
+    age: '100',
+    newObj: {
+        name1: "newuser",
+        age1: '100200',
+    }   
+}
+
+function testing()
+{
+    const {name,age,newObj} = obj;
+    console.log(`this is ${name} and ${newObj.age1}`);
+}
+testing();//output: "this is user and 100200"
