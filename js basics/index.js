@@ -359,7 +359,7 @@ testing();//output: "this is user and 100200"
  */
 
 // Set(), no duplicate values
-
+/* 
 let set = new Set();
 
 set.add(100);
@@ -373,4 +373,24 @@ for(let el of set)
 {
     console.log(el);
 }
+ */
 
+// Map(), key value pair
+
+let map = new Map();
+
+map.set(1,'nasif');
+map.set(2,'ahmed');
+map.set(3,'oney');
+
+//map.delete(1);
+
+console.log(map.keys());
+console.log(map.values());
+console.log(map.get(1));//get values using keys
+
+for(let el of map)
+{
+    console.log(el);//output: every key and value
+}
+map.forEach((el)=> console.log(el));//output: value of every key
