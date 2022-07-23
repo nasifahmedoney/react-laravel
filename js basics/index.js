@@ -376,7 +376,7 @@ for(let el of set)
  */
 
 // Map(), key value pair
-
+/* 
 let map = new Map();
 
 map.set(1,'nasif');
@@ -394,3 +394,9 @@ for(let el of map)
     console.log(el);//output: every key and value
 }
 map.forEach((el)=> console.log(el));//output: value of every key
+ */
+//----------------------------------------------------
+//exporting modules works on live server
+import addNumber from './moduleExport.js';
+
+console.log(addNumber(1,2));
