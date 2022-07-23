@@ -338,7 +338,7 @@ console.log(b); */
  console.log(usersFilter);//['user1'] */
  //----------------------------------------------------
 //arrar destructure
-
+/* 
 let [a,b,c,d] = [1,2,3,4];
 console.log(a);//output: 1
  const obj = {
@@ -356,3 +356,21 @@ function testing()
     console.log(`this is ${name} and ${newObj.age1}`);
 }
 testing();//output: "this is user and 100200"
+ */
+
+// Set(), no duplicate values
+
+let set = new Set();
+
+set.add(100);
+set.add(200);
+set.add(300);
+set.delete(100);
+//option 1:
+set.forEach((elements)=> console.log(elements));
+//option 2:
+for(let el of set)
+{
+    console.log(el);
+}
+
