@@ -397,6 +397,28 @@ map.forEach((el)=> console.log(el));//output: value of every key
  */
 //----------------------------------------------------
 //exporting modules works on live server
+/* 
 import addNumber from './moduleExport.js';
 
 console.log(addNumber(1,2));
+ */
+// try catch finally
+function test(a,b){
+    if(b===0)
+    {
+        throw new Error("second parameter cant be zero");
+    }
+    return a/b;
+}
+
+try {
+    console.log(test(4,0));
+}
+catch(e){
+    console.log(e),
+    console.log(e.name),
+    console.log(e.message)
+}
+finally{
+    console.log('change the second parameter')
+}
